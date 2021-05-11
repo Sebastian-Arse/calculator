@@ -1,0 +1,231 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+html{
+    --bg: #f5f6f7;
+    --color-text: #9c9c9c;
+    --color-orange: #ff6a00;
+    --color-shadow: -4px -2px 4px 0px #ffffff,
+                    4px 2px 6px 0px #DFE4EA;
+    --color-inset-shadow: inset -2px -2px 6px rgba(255,255,255,.8),
+                        inset 2px 2px 6px rgba(0,0,0,.1);
+    --color-equal-shadow: -2px -2px 6px rgba(3,169,244,.01),
+                        2px 2px 6px rgba(0,0,0,.3);
+    --color-equal-inset-shadow: inset -2px -2px 6px rgba(255,106,0,.5),
+                            inset 2px 2px 6px rgba(0,0,0,.3);
+}
+
+html[data-theme="dark"]{
+    --bg: #131419;
+    --color-text: #ffffff;
+    --color-orange: #ff6a00;
+    --color-shadow: -3px -3px 10px rgba(255,255,255,.05),
+                    3px 3px 15px rgba(0,0,0,.5);
+    --color-inset-shadow: inset -2px -2px 6px rgba(255,255,255,0.01),
+                        inset 2px 2px 6px rgba(0,0,0,.8);
+    --color-equal-shadow: inset -2px -2px 6px rgba(255,106,0,.2),
+                        inset 2px 2px 6px rgba(0,0,0,.5);
+}
+body{
+    background: var(--bg);
+    font-family: 'Poppins', sans-serif;
+}
+
+.main{
+    width: 300px;
+    height: 560px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+    background: var(--bg);
+    box-shadow: var(--color-shadow);
+    overflow: hidden;
+}
+.heading{
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 0 28px;
+}
+.heading span{
+    color: var(--color-text);
+    font-size: 18px;
+}
+.heading span:nth-child(1),
+.heading span:nth-child(3){
+    cursor: pointer;
+    font-size: 15px;
+}
+.heading span:nth-child(2){
+    margin-top: 5px;
+}
+.heading span:nth-child(2)::after{
+    width: 115px;
+    content: '';
+    position: absolute;
+    bottom: -5%;
+    border-bottom: 3px solid var(--color-orange);
+    z-index: 100;
+    left: 30%;
+    border-radius: 10px;
+}
+
+#dispatch{
+    padding: 30px 20px;
+}
+.fas{
+    cursor: pointer;
+}
+label input[type="checkbox"]{
+    -webkit-appearance: none;
+}
+label input[type="checkbox"]:checked ~ .fas{
+    color: var(--color-orange);
+}
+.pd{
+    font-family: 'Roboto', sans-serif;
+    margin: 1;
+    padding: 1;
+    display: block;
+    width: 270px;
+    height: 30px;
+    border-radius: 20px;
+}
+.LSMC{
+    font-family: 'Roboto', sans-serif;
+    margin: 1;
+    padding: 1;
+    display: block;
+    width: 270px;
+    height: 30px;
+    border-radius: 20px;
+}
+.Army{
+    font-family: 'Roboto', sans-serif;
+    margin: 1;
+    padding: 1;
+    display: block;
+    width: 270px;
+    height: 30px;
+    border-radius: 20px;
+}
+.DPOS{
+    font-family: 'Roboto', sans-serif;
+    margin: 1;
+    padding: 1;
+    display: block;
+    width: 270px;
+    height: 30px;
+    border-radius: 20px;
+}
+.DMV{
+    font-family: 'Roboto', sans-serif;
+    margin: 1;
+    padding: 1;
+    display: block;
+    width: 270px;
+    height: 30px;
+    border-radius: 20px;
+}
+.GOV{
+    font-family: 'Roboto', sans-serif;
+    margin: 1;
+    padding: 1;
+    display: block;
+    width: 270px;
+    height: 30px;
+    border-radius: 20px;
+}
+.LSC{
+    font-family: 'Roboto', sans-serif;
+    margin: 1;
+    padding: 1;
+    display: block;
+    width: 270px;
+    height: 30px;
+    border-radius: 20px;
+}
+.WN{
+    font-family: 'Roboto', sans-serif;
+    margin: 1;
+    padding: 1;
+    display: block;
+    width: 270px;
+    height: 30px;
+    border-radius: 20px;
+}
+.Auk{
+    font-family: 'Roboto', sans-serif;
+    margin: 1;
+    padding: 1;
+    width: 270px;
+    height: 30px;
+    border-radius: 20px;
+}
+.text{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: rgb(71, 46, 7);
+    font-size: 22px;
+}
+.cancel{
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    margin: 1;
+    padding: 1;
+    display: block;
+    width: 270px;
+    height: 30px;
+    border-radius: 20px;
+}
+.texxt{
+    font-size: 22px;
+    text-align: center;
+    color: rgb(71, 46, 7);
+}
+.pd:hover{
+    background: rgb(66, 63, 63);
+}
+.LSMC:hover{
+    background: rgb(66, 63, 63);
+}
+.Army:hover{
+    background: rgb(66, 63, 63);
+}
+.DPOS:hover{
+    background: rgb(66, 63, 63);
+}
+.DMV:hover{
+    background: rgb(66, 63, 63);
+}
+.GOV:hover{
+    background: rgb(66, 63, 63);
+}
+.LSC:hover{
+    background: rgb(66, 63, 63);
+}
+.WN:hover{
+    background: rgb(66, 63, 63);
+}
+.Auk:hover{
+    background: rgb(66, 63, 63);
+}
+.abr{
+    font-family: 'Roboto', sans-serif;
+    margin: 1;
+    padding: 1;
+    display: block;
+    width: 270px;
+    height: 30px;
+    border-radius: 20px;
+    text-align: center;
+}
+.abr:hover{
+    background: red;
+}
